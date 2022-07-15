@@ -11,4 +11,5 @@ python_awslambda(
     name="awslambda",
     handler="lambda.py:handler",
     complete_platforms=[":complete_platform_lambda"],
+    dependencies=["!!:mypy", "!!:types-urllib3"],
 )
